@@ -1,5 +1,9 @@
 # ReactiveRealm
+
+![image](https://github.com/gitdoapp/ReactiveRealm/blob/master/assets/reactiverealm.png?raw=true)
+
 Reactive interface for Realm using ReactiveCocoa
+ReactiveRealm is part of [GitDo](http://www.gitdo.io) where we use Realm as the persistence solution and ReactiveCocoa to implement the application core with a reactive interface. If you :heart: Github but you feel that the issues interface is not enough you should give a try to [GitDo](http://www.gitdo.io)
 
 ### Installation
 - Copy `ReactiveRealm.swift` into your project
@@ -7,7 +11,7 @@ Reactive interface for Realm using ReactiveCocoa
 
 *Note: We'll add CocoaPods and Carthage integration once Swift2.0 is officially launched*
 
-### Features
+### Features 1.0.0
 - It's **Swift 2.0** ready
 - Offers static Signal Produced for all Realm operations (saving, deletion, fetching)
 - It uses **ReactiveCocoa 3.0** version
