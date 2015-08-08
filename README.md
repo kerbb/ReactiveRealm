@@ -21,7 +21,7 @@ Realm.rx_objects(Notification)
 ```swift
 Realm.rx_create(type: Notification, value: notification, update = true, thread: .BackgroundThread)
   |> start(completed: {
-  
+    // Yay! notification created
   })
 ```
 
