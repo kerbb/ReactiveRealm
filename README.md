@@ -17,12 +17,35 @@ Realm.rx_objects(Notification)
     println("Notifications: \($0)")
   })
 ```
-**Craeting objects**
+**Creating objects in a Background Thread**
 ```swift
 Realm.rx_create(type: Notification, value: notification, update = true, thread: .BackgroundThread)
   |> start(completed: {
     // Yay! notification created
   })
+```
+**Deleting objects**
+```swift
+Realm.rx_delete(object: notification, thread: .SameThread)
+  |> start(completed: {
+    // Yay! notification deleted
+  })
+```
+### RealmThread
+`RealmThread` is a custom enum that specifies the thread where the operation will be executed.
+```swift
+/**
+Enum that represents a Realm within a thread (used for operations)
+
+- MainThread:             Operations executed in the Main Thread Realm. Completion called in Main Thread
+- BackgroundThread        Operations executed in a New Background Thread Realm. Completion called in the Main Thread
+- SameThread:             Operations executed in the given Background Thread Realm. Completion called in the same Thread
+*/
+enum RealmThread {
+    case MainThread
+    case BackgroundThread
+    case SameThread(Realm)
+}
 ```
 
 ### :golf: Todo
