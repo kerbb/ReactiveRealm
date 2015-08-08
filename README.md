@@ -1,6 +1,11 @@
 # ReactiveRealm
 Reactive interface for Realm using ReactiveCocoa
 
+### Installation
+- Copy `ReactiveRealm.swift` into your project
+- Make sure you have **ReactiveCocoa 3.0** and **RealmSwift** compatible with Swift 2.0
+
+*Note: We'll add CocoaPods and Carthage integration once Swift2.0 is officially launched*
 
 ### Features
 - It's **Swift 2.0** ready
