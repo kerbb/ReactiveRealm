@@ -9,7 +9,21 @@ Reactive interface for Realm using ReactiveCocoa
 - Custom Signal operators for **filtering** and **sorting**
 
 ### :octocat: Examples
-
+**Fetching objects**
+```swift
+Realm.rx_objects(Notification) 
+  |> filter("read == NO")
+  |> start(next: {
+    println("Notifications: \($0)")
+  })
+```
+**Craeting objects**
+```swift
+Realm.rx_create(type: Notification, value: notification, update = true, thread: .BackgroundThread)
+  |> start(completed: {
+  
+  })
+```
 
 ### :golf: Todo
 - [ ] Once Swift 2.0 is officially launched, add CocoaPods/Carthage integration steps
