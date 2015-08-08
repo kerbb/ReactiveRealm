@@ -8,9 +8,9 @@ Reactive interface for Realm using ReactiveCocoa
 - It uses **ReactiveCocoa 3.0** version
 - Custom Signal operators for **filtering** and **sorting**
 
-### Examples
+### :octocat: Examples
 
 
-### Todo :octocat:
+### :golf: Todo
 - [ ] Once Swift 2.0 is officially launched, add CocoaPods/Carthage integration steps
 - [ ] Include Unit Tests using real models
